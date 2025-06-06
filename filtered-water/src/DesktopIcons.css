@@ -1,0 +1,10 @@
+.desktop-icons {
+  width: 25vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icons {
+  width: 35%;
+  height: auto;
+}

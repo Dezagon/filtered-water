@@ -1,0 +1,39 @@
+.full-window-additional {
+  width: max-content;
+  height: max-content;
+}
+
+.window-additional {
+  height: 90%;
+}
+
+.stationary-window {
+  position: relative;
+  zindex: 1;
+}
+
+.floating-window {
+  position: absolute;
+  inset-inline-start: 700px;
+  inset-block-start: 150px;
+  zindex: 2;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.button-spacing {
+  width: 40%;
+  display: flex;
+  flex-flow: inherit;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 25%;
+  height: 5vh;
+}

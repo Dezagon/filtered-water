@@ -10,13 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "7.css": "^0.18.0",
+    "bootstrap": "^5.3.6",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-audio-player": "^0.17.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
+    "react-player": "^2.16.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@types/node": "^22.15.29",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@types/webpack-env": "^1.18.8",
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
