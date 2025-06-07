@@ -5,6 +5,11 @@
 }
 
 .icons {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
   width: 35%;
-  height: auto;
 }

@@ -1,3 +1,6 @@
+p {
+  font-size: 1rem;
+}
 .full-window-additional {
   width: max-content;
   height: max-content;
@@ -17,6 +20,17 @@
   inset-inline-start: 700px;
   inset-block-start: 150px;
   zindex: 2;
+}
+
+.floating-window-additional {
+  width: 300px;
+}
+
+.floating-window2 {
+  position: absolute;
+  inset-inline-start: 750px;
+  inset-block-start: 200px;
+  zindex: 3;
 }
 
 .buttons {

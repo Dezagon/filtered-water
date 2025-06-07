@@ -8,13 +8,25 @@ import WindowsPaint from "./assets/frutiger-icons/windows-paint.png";
 import VideosLibrary from "./assets/frutiger-icons/videos-library.png";
 import WaterFilter from "./assets/frutiger-icons/water-filter.png";
 
-export const DesktopIcons = () => {
-  const images = [Sims, PurblePlace, DVDMaker, FileExplorer, WindowsPaint, VideosLibrary, WaterFilter];
+type DesktopIconProps = {
+  openWF: (bool: boolean) => void;
+};
+
+export const DesktopIcons: React.FC<DesktopIconProps> = ({ openWF }) => {
+  const handleClick = (bool: boolean) => {
+    openWF(bool);
+  };
+  const images = [Sims, PurblePlace, DVDMaker, FileExplorer, WindowsPaint, VideosLibrary];
   return (
     <div className="desktop-icons">
       {images.map((image) => (
-        <img src={image} className="icons" />
+        <button>
+          <img src={image} className="icons" />
+        </button>
       ))}
+      <button>
+        <img src={WaterFilter} className="icons" onClick={() => handleClick(true)} />
+      </button>
     </div>
   );
 };
